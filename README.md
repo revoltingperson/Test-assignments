@@ -11,7 +11,7 @@
 ```jsx
 	<template v-for="i of count" :key="i">
 		<component-name
-		v-if="i < 10" 
+			v-if="i < 10" 
 		/>
 	</template>
 
