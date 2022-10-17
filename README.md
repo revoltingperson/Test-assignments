@@ -9,9 +9,9 @@
 Согласно официальной документации Vue2 и Vue3, блоки v-for и v-if не должны находится в одном и том же узле, поскольку v-if имеет больший приоритет и переменные из области v-for будут недоступны. Чтобы это исправить, выносим v-for в template.
 
 ```jsx
-<template v-for="i of count" :key="i">
+	<template v-for="i of count" :key="i">
 		<component-name
-			v-if="i < 10" 
+		v-if="i < 10" 
 		/>
 	</template>
 
